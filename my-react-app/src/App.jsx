@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { lazy, Suspense } from "react";
+import { Analytics } from "@vercel/analytics/react";
 
 import ScrollToTop from "./components/ScrollToTop";
 import TopBar from "./components/TopBar";
@@ -35,6 +36,7 @@ function App() {
       </Suspense>
 
       <Footer />
+      <Analytics />
     </BrowserRouter>
   );
 }
